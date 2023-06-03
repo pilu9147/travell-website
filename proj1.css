@@ -1,0 +1,495 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /* 16 px = 100%
+    10px  =   62.5% */
+  font-size: 62.5%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+}
+p,
+li {
+  font-size: 1.6rem;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.15em;
+}
+h1,
+h2,
+h3 {
+  margin-bottom: 0.5em;
+  letter-spacing: 0.15em;
+  font-weight: 500;
+}
+
+/* ############################### UTILITY CLASES ############################### */
+.container {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+}
+.bg-dark {
+  background-color: #263238;
+}
+.lg-heading {
+  font-size: 3.5rem;
+}
+.md-heading {
+  font-size: 2.2rem;
+}
+.txt-red {
+  color: #e63946;
+}
+.txt-light {
+  color: #f4f4f4;
+}
+.txt-blk {
+  color: #333333;
+}
+.txt-grey {
+  color: #555555;
+}
+.btn {
+  display: inline-block;
+  padding: 0.3em 1.3em;
+  text-transform: uppercase;
+  margin: 0.5em 0;
+}
+.btn-prim {
+  color: red;
+  background-color: #f4f4f4;
+  border-radius: 11rem;
+}
+.btn-prim:hover {
+  background-color: cornsilk;
+}
+.btn-second {
+  border: 2px solid red;
+  color: red;
+  background-color: #f4f4f4;
+  border-radius: 11rem;
+}
+.btn-prim:hover,
+.btn-second:hover {
+  background-color: cornsilk;
+  border: 2px solid black;
+}
+
+/* ###############################  HEADER STYLING ############################### */
+
+ul li {
+  list-style: none;
+}
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+.header {
+  height: 100vh;
+  width: 100vw;
+  background-color: #263238;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/header-image.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.navbar {
+  width: 100vw;
+  padding: 1rem;
+  color: #f4f4f4;
+}
+.navbar .logo,
+.navbar a {
+  color: white;
+}
+.navbar .logo {
+  float: left;
+}
+.navbar .items {
+  float: right;
+  margin-top: 1rem;
+}
+.navbar .item {
+  display: inline-block;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+.navbar::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.navbar a:visited,
+.navbar a:link {
+  color: #f4f4f4;
+  padding-bottom: 0.3rem;
+}
+.navbar a:hover {
+  border-bottom: 2px solid palevioletred;
+  transform-style: preserve-3d;
+  transition-duration: 0.1s;
+}
+.headcont {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+.head-h1 {
+  color: #f4f4f4;
+  font-weight: 700;
+}
+.head-p {
+  color: #f4f4f4;
+  font-size: small;
+}
+
+/* #################################### section - showcase ############################### */
+
+.showcase {
+  width: 100vw;
+  background-color: darkgray;
+  padding: 5rem 0;
+}
+.row {
+  height: 26rem;
+  border: 2px solid black;
+}
+.row1 {
+  margin-bottom: 5rem;
+}
+.row1 .img1,
+.row2 .text2 {
+  float: left;
+  width: 50%;
+}
+.row1 .text1,
+.row2 .img2 {
+  float: right;
+  width: 50%;
+}
+.txt {
+  height: 100%;
+  padding: 1rem 3rem;
+  line-height: 1.2;
+}
+.img {
+  padding: 1rem;
+  height: 100%;
+}
+.img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3rem;
+}
+.txt h1 {
+  font-size: 3rem;
+}
+.txt p {
+  font-size: 1.6rem;
+}
+.row {
+  background-color: white;
+  border-radius: 3rem;
+  box-shadow: 0px 10px 20px 0px rgba(58, 38, 38, 0.203);
+}
+
+/* ############################## section 2 - wrapper box ########################### */
+
+.feture {
+  padding: 50px 0;
+}
+.bx {
+  text-align: center;
+  width: 32%;
+  float: left;
+  line-height: 1;
+  margin: 0px 0.5rem;
+  padding-top: 2rem;
+}
+.bx-wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.blk1,
+.blk2 {
+  color: #f4f4f4;
+  border-radius: 2rem;
+  background-color: #263238;
+}
+.red {
+  background-color: rgba(209, 48, 36, 0.526);
+  border-radius: 2rem;
+}
+.bx h3 {
+  font-size: 2rem;
+  padding: 0.8rem 0;
+}
+
+/* ############################ FOOTER ######################### */
+
+.footer {
+  background-color: black;
+  color: #f4f4f4;
+  padding: 2rem;
+  text-align: center;
+}
+.social .icon {
+  padding: 1rem 1rem;
+}
+
+/* **************************************   about.html style   ************************************* */
+
+.about {
+  padding: 5rem 0;
+}
+/* .abt-heading {
+  border-bottom: 0.5rem solid #e63946;
+} */
+.abt-heading::after {
+  content: "";
+  display: block;
+  border: 0.3rem solid #e63946;
+  width: 100%;
+}
+
+/* ############################ wrapper ##################################### */
+.abt-wrap {
+  text-align: center;
+  margin-top: 2rem;
+}
+.abt-wrap .left {
+  float: left;
+  width: 50%;
+}
+.abt-wrap .right {
+  float: right;
+  width: 50%;
+}
+.abt-wrap::after {
+  /* to take above to inside box */
+  content: "";
+  display: block;
+  clear: both;
+}
+.abt-wrap li::before {
+  content: "\2713";
+  color: #e63946;
+  font-weight: bold;
+  padding-right: 1rem;
+}
+
+/* ###########################################   COUNTS   ####################################### */
+
+.count {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+.count span {
+  color: #e63946;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.count p {
+  font-weight: 500;
+  color: #555555;
+}
+/* 
+###############################    BANNER    ####################################### */
+.banner {
+  padding: 1rem;
+  color: #f4f4f4;
+  background-color: #e04552;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.para {
+  font-size: 1.8rem;
+}
+.he a {
+  font-size: 2rem;
+  border: 2px solid white;
+  color: #f4f4f4;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  background-color: brown;
+}
+.he a:hover {
+  background-color: #f4f4f4;
+  color: brown;
+  border: 2px solid #333333;
+}
+
+/* **************************************  contact file    ************************************* */
+.wrapper {
+   border-radius: 1rem;
+   display: flex;
+   justify-content: space-between;
+   margin-top: 6rem;
+   margin-bottom: 5rem;
+}
+.cmp-add {
+  width: 49%;
+  background-color: gainsboro;
+ padding: 1rem;
+}
+.cmp-add i {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.from {
+  width: 49%;
+  background-color: gainsboro;
+  padding: 1rem;
+  
+}
+.from label::after {
+  content: "* ";
+  color: #263238;
+
+}
+.cmp-add img {
+  object-fit: cover;
+  object-position: right;
+  max-width: 100%;
+  min-height: 40rem;
+  max-height: 40rem;
+}
+.from h1 {
+  display: inline-block;
+  text-transform: uppercase;
+}
+.cntc-us::after {
+    content: "";
+    display: block;
+    border: 0.3rem solid #e63946;
+    width: 100%;
+}
+.add-grp {
+ margin-bottom: 2rem;
+}
+.icon_bar{
+  display: flex;
+  align-items: center;
+}
+.inline{
+  font-size: 16px;
+}
+label {
+  font-size: 1.5rem;
+}
+.wide {
+  width: 100%;
+  height: 2.5rem;
+}
+.frm-grp {
+  margin: 1rem 0;
+}
+.prg {
+  padding-top: 1rem;
+}
+
+.from.butt{
+  display: inline-block;
+  padding: 0.3em 1.3em;
+  text-transform: uppercase;
+  margin: 1rem auto;
+}
+.msg {
+  height: 26rem;
+}
+.from .butt {
+  font-size: 1.5rem !important;
+  display: block;
+  margin: 0 auto;
+  padding: 0.5em 3em;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  background: #e63946;
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* ############################# media queries  ############################## */
+
+@media (max-width:500px) {
+  html {
+    font-size: 50%;
+  }
+  .navbar .items,.navbar .logo {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .headcont .head-h1 {
+     display: none;
+  }
+  .row {
+    height: auto;
+    width: 100%;
+  }
+  .row .txt,.row .img {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .feture .bx {
+    float: none;
+    text-align: center;
+    width: 100%;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+
+  .banner{
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .he {
+    margin: 1rem auto;
+  }
+
+
+  .wrapper {
+    flex-direction: column;
+    word-wrap: break-word !important;
+  }
+  .cmp-add {
+    width: 100%;
+    margin-bottom: 20px;
+    word-wrap: break-word !important;
+  }
+  .from {
+    width: 100%;
+  }
+  .contact-form .container .wrapper {
+    width: 100%;
+  }
+}
+
+@media (min-width:500px) and (max-width:850) {
+  .row {
+    min-height: auto;
+  }
+}
